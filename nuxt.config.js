@@ -39,6 +39,9 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+  serverMiddleware:[
+    '~/server/routes/index'
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
