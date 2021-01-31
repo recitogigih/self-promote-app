@@ -4,8 +4,10 @@ export const state = () =>({
 
 export const actions = {
   fetchCourses({commit}) {
+    debugger
     return this.$axios.$get('/api/v1/products')
     .then(courses => {
+      debugger
       commit('setItems', {resource:'course', items:courses}, {root:true})
       return state.items
     })

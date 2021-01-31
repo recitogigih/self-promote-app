@@ -1,6 +1,6 @@
-export const mutation = {
-  setItem(state,{resource, items}){
+export const mutations = {
+  setItems(state,{resource, items}){
     debugger
-    state[resource].items = item
+    state[resource].items = items
   }
 }
